@@ -21,20 +21,17 @@ struct SosView: View {
                 Button {
                     // send sos to contacts
                 } label: {
-                    Circle()
-                        .foregroundStyle(.red)
-                        .overlay {
-                            Circle()
-                                .stroke(lineWidth: 10)
-                                .foregroundStyle(.regularMaterial)
-                        }
-                        .overlay {
-                            Text("SOS")
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.white)
-                        }
-                        .frame(width: 250)
+                    VStack {
+                        Image(systemName: "sos.circle.fill")
+                            .resizable()
+                            .frame(width: 250, height: 250)
+                            .foregroundStyle(.white, .red)
+                            .overlay {
+                                Circle()
+                                    .stroke(lineWidth: 10)
+                                    .foregroundStyle(.regularMaterial)
+                            }
+                    }
                 }
                 
                 Spacer()
