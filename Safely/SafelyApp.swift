@@ -11,7 +11,7 @@ import SwiftUI
 struct SafelyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SosView()
         }
     }
 }

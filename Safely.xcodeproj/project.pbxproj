@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		150885D72C368EC20097A231 /* SafelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885D62C368EC20097A231 /* SafelyApp.swift */; };
-		150885D92C368EC20097A231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885D82C368EC20097A231 /* ContentView.swift */; };
+		150885D92C368EC20097A231 /* SosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885D82C368EC20097A231 /* SosView.swift */; };
 		150885DB2C368EC30097A231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150885DA2C368EC30097A231 /* Assets.xcassets */; };
 		150885DE2C368EC30097A231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150885DD2C368EC30097A231 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		150885D32C368EC20097A231 /* Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150885D62C368EC20097A231 /* SafelyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafelyApp.swift; sourceTree = "<group>"; };
-		150885D82C368EC20097A231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		150885D82C368EC20097A231 /* SosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SosView.swift; sourceTree = "<group>"; };
 		150885DA2C368EC30097A231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150885DD2C368EC30097A231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				150885D62C368EC20097A231 /* SafelyApp.swift */,
-				150885D82C368EC20097A231 /* ContentView.swift */,
+				150885D82C368EC20097A231 /* SosView.swift */,
 				150885DA2C368EC30097A231 /* Assets.xcassets */,
 				150885DC2C368EC30097A231 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150885D92C368EC20097A231 /* ContentView.swift in Sources */,
+				150885D92C368EC20097A231 /* SosView.swift in Sources */,
 				150885D72C368EC20097A231 /* SafelyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
