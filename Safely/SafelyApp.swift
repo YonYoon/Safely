@@ -11,7 +11,12 @@ import SwiftUI
 struct SafelyApp: App {
     var body: some Scene {
         WindowGroup {
-            SosView()
+            TabView {
+                SosView()
+                    .tabItem {
+                        Label("Экстренный вызов", systemImage: "sos.circle")
+                    }
+            }
         }
     }
 }
