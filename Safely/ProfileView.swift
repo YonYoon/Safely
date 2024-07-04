@@ -9,7 +9,28 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Form {
+                Section {
+                    Text("Имя")
+                    Text("Фамилия")
+                }
+                
+                Section {
+                    Text("Адрес дома")
+                    Text("Дополнительный адрес")
+                }
+                
+                Section {
+                    Text("Медицинская карта")
+                }
+                
+                Section {
+                    Text("Близкие контакты")
+                }
+            }
+            .navigationTitle("Профиль")
+        }
     }
 }
 
