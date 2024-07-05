@@ -13,6 +13,7 @@
 		150885DE2C368EC30097A231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150885DD2C368EC30097A231 /* Preview Assets.xcassets */; };
 		150885E52C36DC770097A231 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885E42C36DC770097A231 /* ProfileView.swift */; };
 		150885E92C37DFBC0097A231 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885E82C37DFBC0097A231 /* Profile.swift */; };
+		150885EB2C37E1EC0097A231 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150885EA2C37E1EC0097A231 /* ProfileStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		150885DD2C368EC30097A231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		150885E42C36DC770097A231 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		150885E82C37DFBC0097A231 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		150885EA2C37E1EC0097A231 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				150885D82C368EC20097A231 /* SosView.swift */,
 				150885E42C36DC770097A231 /* ProfileView.swift */,
 				150885E82C37DFBC0097A231 /* Profile.swift */,
+				150885EA2C37E1EC0097A231 /* ProfileStore.swift */,
 				150885DA2C368EC30097A231 /* Assets.xcassets */,
 				150885DC2C368EC30097A231 /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150885D92C368EC20097A231 /* SosView.swift in Sources */,
+				150885EB2C37E1EC0097A231 /* ProfileStore.swift in Sources */,
 				150885E92C37DFBC0097A231 /* Profile.swift in Sources */,
 				150885E52C36DC770097A231 /* ProfileView.swift in Sources */,
 				150885D72C368EC20097A231 /* SafelyApp.swift in Sources */,

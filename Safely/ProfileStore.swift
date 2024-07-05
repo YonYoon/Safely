@@ -5,4 +5,28 @@
 //  Created by Zhansen Zhalel on 05.07.2024.
 //
 
-import Foundation
+import Observation
+import SwiftUI
+
+@MainActor
+@Observable class ProfileStore {
+    var profile = Profile()
+    
+    private static func fileURL() throws -> URL {
+        try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            .appendingPathComponent("profile", conformingTo: .data)
+    }
+    
+    func load() async throws {
+        let task = Task<Profile, Error> {
+            let fileURL = try Self.fileURL()
+            guard let data = try? Data(contentsOf: fileURL) else {
+                return Profile()
+            }
+            let profile = try JSONDecoder().decode(Profile.self, from: data)
+            return profile
+        }
+        let profile = try await task.value
+        self.profile = profile
+    }
+}
