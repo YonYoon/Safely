@@ -8,10 +8,10 @@
 import Foundation
 
 struct Profile: Codable {
-    var name: String
-    var surname: String
-    var homeAddress: String
-    var additionalAddress: String
+    var name = ""
+    var surname = ""
+    var homeAddress = ""
+    var additionalAddress = ""
     // TODO: Add medical record
-    var contacts: [String]
+    var contacts = [String]()
 }
