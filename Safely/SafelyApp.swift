@@ -20,6 +20,13 @@ struct SafelyApp: App {
                     }
             }
             .environment(profileStore)
+            .task {
+                do {
+                    try await profileStore.load()
+                } catch {
+                    print(error)
+                }
+            }
         }
     }
 }
