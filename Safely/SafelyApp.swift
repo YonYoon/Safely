@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct SafelyApp: App {
+    @State private var profileStore = ProfileStore()
+    
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -17,6 +19,7 @@ struct SafelyApp: App {
                         Label("Экстренный вызов", systemImage: "sos.circle")
                     }
             }
+            .environment(profileStore)
         }
     }
 }
