@@ -5,10 +5,8 @@
 //  Created by Zhansen Zhalel on 05.07.2024.
 //
 
-import Observation
 import SwiftUI
 
-@MainActor
 @Observable class ProfileStore {
     var profile = Profile()
     
