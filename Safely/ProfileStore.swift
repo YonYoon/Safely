@@ -29,4 +29,14 @@ import SwiftUI
         let profile = try await task.value
         self.profile = profile
     }
+    
+    func save(profile: Profile) async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(profile)
+            let outfile = try Self.fileURL()
+            try data.write(to: outfile)
+        }
+        
+        _ = try await task.value
+    }
 }
