@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct SafelyApp: App {
-    @State private var profileStore = ProfileStore()
+    @State private var profile = Profile()
     
     var body: some Scene {
         WindowGroup {
@@ -18,16 +18,8 @@ struct SafelyApp: App {
                 SosView()
                     .tabItem { Label("Экстренный вызов", systemImage: "sos.circle") }
                 
-                ProfileView()
+                ProfileView(profile: profile)
                     .tabItem { Label("Профиль", systemImage: "person.circle.fill") }
-            }
-            .environment(profileStore)
-            .task {
-                do {
-                    try await profileStore.load()
-                } catch {
-                    print(error)
-                }
             }
         }
     }
