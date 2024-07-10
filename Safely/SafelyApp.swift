@@ -15,9 +15,7 @@ struct SafelyApp: App {
         WindowGroup {
             TabView {
                 SosView()
-                    .tabItem {
-                        Label("Экстренный вызов", systemImage: "sos.circle")
-                    }
+                    .tabItem { Label("Экстренный вызов", systemImage: "sos.circle") }
                 
                 ProfileView()
                     .tabItem { Label("Профиль", systemImage: "person.circle.fill") }
