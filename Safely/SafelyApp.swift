@@ -18,6 +18,9 @@ struct SafelyApp: App {
                     .tabItem {
                         Label("Экстренный вызов", systemImage: "sos.circle")
                     }
+                
+                ProfileView()
+                    .tabItem { Label("Профиль", systemImage: "person.circle.fill") }
             }
             .environment(profileStore)
             .task {
