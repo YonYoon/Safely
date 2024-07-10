@@ -5,6 +5,7 @@
 //  Created by Zhansen Zhalel on 04.07.2024.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -28,6 +29,7 @@ struct SafelyApp: App {
                     print(error)
                 }
             }
+            .modelContainer(for: Profile.self)
         }
     }
 }
