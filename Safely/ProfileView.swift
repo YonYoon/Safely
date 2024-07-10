@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @Environment(ProfileStore.self) private var profileStore
+    @Bindable var profile: Profile
     
     var body: some View {
         NavigationStack {
             Form {
                 Section {
-                    Text("Имя")
-                    Text("Фамилия")
+                    TextField("Имя", text: $profile.name)
+                    TextField("Фамилия", text: $profile.surname)
                 }
                 
                 Section {
-                    Text("Адрес дома")
-                    Text("Дополнительный адрес")
+                    TextField("Адрес дома", text: $profile.homeAddress)
+                    TextField("Дополнительный адрес", text: $profile.additionalAddress)
                 }
                 
                 Section {
@@ -37,6 +37,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
-        .environment(ProfileStore())
+    ProfileView(profile: Profile())
 }
