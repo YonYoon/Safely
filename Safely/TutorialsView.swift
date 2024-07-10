@@ -8,11 +8,42 @@
 import SwiftUI
 
 struct TutorialsView: View {
+    var tutorials = TutorialsData.tutorials
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(tutorials, id: \.self) { tutorial in
+                Section {
+                    NavigationLink(tutorial.title) { LessonView(tutorial: tutorial) }
+                }
+            }
+            .navigationTitle("Обучение")
+        }
     }
 }
 
 #Preview {
     TutorialsView()
+}
+
+struct LessonView: View {
+    var tutorial: Tutorial
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(tutorial.title)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                
+                Text(tutorial.content)
+            }
+            .padding()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+#Preview {
+    LessonView(tutorial: Tutorial(title: "Title", content: "Content"))
 }
