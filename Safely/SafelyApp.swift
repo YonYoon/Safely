@@ -29,7 +29,6 @@ struct SafelyApp: App {
                     print(error)
                 }
             }
-            .modelContainer(for: Profile.self)
         }
     }
 }
