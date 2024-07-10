@@ -7,8 +7,9 @@
 
 
 import Foundation
+import Observation
 
-struct Profile: Codable {
+@Observable class Profile {
     var name = ""
     var surname = ""
     var homeAddress = ""
